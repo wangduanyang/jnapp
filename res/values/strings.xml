@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">JnApp_v1</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="login_btn_text">登录</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="username">yy</string>
+    <string name="exit">Exit</string>
+    <string name="Username">Username</string>
+    <string name="Password">Password</string>
+    <string name="login">登录</string>
+    <string name="logout">Logout</string>
+    <string name="register">注册</string>
+    <string name="CheckBox">记住密码</string>
+    <string name="refresh">Update</string>
+    <string name="sendMsg">SendMessage</string>
+    <string name="contentDes">mypic</string>
+    <string name="btn_at_string">回复</string>
+    <string name="juli">距离</string>
+    <string name="name1">老米家泡馍小炒</string>
+    <string name="_shuxin">刷新</string>
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ContentDescription" severity="ignore" />
+    <issue id="CutPasteId">
+        <ignore path="src/com/dc/jnapp_v1/ShowMap.java" />
+    </issue>
+    <issue id="HandlerLeak">
+        <ignore path="src/com/dc/jnapp_v1/AppBaseActivity.java" />
+        <ignore path="src/com/dc/jnapp_v1/ShowMap.java" />
+    </issue>
+    <issue id="HardcodedText" severity="ignore" />
+</lint>

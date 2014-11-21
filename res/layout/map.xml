@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:clickable="true" />
+
+    <RelativeLayout
+        android:id="@+id/id_marker_info"
+        android:layout_width="fill_parent"
+        android:layout_height="350dp"
+        android:layout_alignParentBottom="true"
+        android:background="#CC4e5a6b"
+        android:clickable="true"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/info_img"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="10dp"
+            android:alpha="1.0"
+            android:clickable="true"
+            android:contentDescription="@string/contentDes"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/info_img"
+            android:background="@drawable/abc_cab_background_bottom_holo_dark" >
+
+            <TextView
+                android:id="@+id/info_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/info_name"
+                android:layout_marginTop="29dp"
+                android:text="@string/juli"
+                android:textColor="#FFF5EB" />
+
+            <ImageView
+                android:id="@+id/info_zan_image"
+                android:layout_width="82dp"
+                android:layout_height="24dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/id_shuaxin"
+                android:layout_toRightOf="@+id/info_distance"
+                android:onClick="zan"
+                android:src="@drawable/dianzan01" />
+
+            <TextView
+                android:id="@+id/info_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="22dp"
+                android:layout_marginRight="74dp"
+                android:layout_toLeftOf="@+id/id_shuaxin"
+                android:text="@string/name1"
+                android:textColor="#FFF5EB" />
+
+            <Button
+                android:id="@+id/id_shuaxin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/info_zan"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="44dp"
+                android:gravity="center"
+                android:text="@string/_shuxin"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/info_zan"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="282dp"
+                android:layout_marginRight="60dp"
+                android:gravity="center"
+                android:text="1111"
+                android:textColor="#FFF5EB"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/info_listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/relativeLayout1"
+            android:layout_alignParentLeft="true" >
+
+        </ListView>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/show"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="473dp"
+        android:layout_marginRight="118dp"
+        android:layout_toLeftOf="@+id/dialog"
+        android:text="@string/refresh" />
+
+    <Button
+        android:id="@+id/dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/show"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/sendMsg" />
+
+<!--     <RelativeLayout
+        android:id="@+id/id_del_lv"
+        android:background="#CC4e5a6b"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@+id/dialog"
+        android:layout_marginTop="116dp"
+        android:visibility="gone" >
+ -->
+<!--     </RelativeLayout> -->
+
+        <ListView
+            android:id="@+id/listView_del"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="#CC4e5a6b"
+            android:descendantFocusability="blocksDescendants"
+            android:stackFromBottom="false"
+            android:visibility="gone" >
+        </ListView>
+
+</RelativeLayout>

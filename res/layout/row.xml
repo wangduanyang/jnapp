@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/id_linearLy1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="123dp"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-self"
+            android:text="titlename"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#cd950c" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-self"
+            android:text="titlename2"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#cd950c" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_linearLy2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="313dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:text="Message"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#00b2ee" />
+
+        <Button
+            android:id="@+id/id_btn_at"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="@string/btn_at_string" />
+    </LinearLayout>
+
+</LinearLayout>
